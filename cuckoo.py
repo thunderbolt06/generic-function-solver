@@ -122,6 +122,7 @@ class cuckoo_output:
         box.insert(tk.END,"\n---")
 
 if __name__ == "__main__":
+    print("main")
     cuckoo_algo = cuckoo_run(num_hosts = 10,iteration = 100,fraction_discard= 0.5,radius= 1)
     out = cuckoo_output(cuckoo_algo)
     out.start()
